@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="top"> <h1>Saludador</h1> </div>
+  <div class="middle">
+    <div class="left-middle">
+    </div>
+    <div class="right-middle">
+      <form id="saludador-form">
+        <label for="nombre-input">Ingresa tu nombre: </label>
+        <input type="text" id="nombre-input" />
+        <br>
+        <label for="edad-input">Ingresa tu edad: </label>
+        <input type="text" id="edad-input" />
+        <br>
+        <label for="genero-input">Ingresa tu género: </label>
+        <select name="SelectorGenero" id="genero-input">
+          <option value="Femenino">Femenino</option>
+          <option value="Masculino">Masculino</option>
+        </select>
+        <br>
+        <label for="saludo-input">Ingresa el tipo de saludo: </label>
+        <select name="SelectorSaludo" id="saludo-input">
+          <option value="Pacenio">Paceño</option>
+          <option value="Cochala">Cochala</option>
+          <option value="Crucenio">Cruceño</option>
+        </select>
+        <br>
+        <input type="submit" value="Saludar" />
+      </form>
+    </div>
+  </div>
+  <script src="./src/index.js"></script>
+</body>
+</html>
