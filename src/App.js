@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
   var date = new Date();
   var hour = date.getHours();
   var tiempoSaludo = "Buen dia ";
-  var inicioSaludo = "Hola ";
+  var inicioSaludo = "Hola";
   var generoSaludo = "Señor";
   // Comprobar Tiempo
   if (hour > 12)
@@ -18,37 +18,34 @@ form.addEventListener("submit", (event) => {
   
   // Saludo Paceño
   if (saludo.value == "Pacenio") {
-    inicioSaludo = "Como es "
-    generoSaludo = "Señor";
+    inicioSaludo = "Como es"
+    generoSaludo = "Señor ";
     if (parseInt(edad.value) > 30) {
       if (genero.value == "Femenino")
-        generoSaludo = "Señora";
-        inicioSaludo = inicioSaludo + generoSaludo;
+        generoSaludo = "Señora ";
     }
   }
 
   // Saludo Cochala
   if (saludo.value == "Cochala") {
-    inicioSaludo = "Que tal ";
-    generoSaludo = "Compadre";
+    inicioSaludo = "Que tal";
+    generoSaludo = "Compadre ";
     if (parseInt(edad.value) > 30){
       if (genero.value == "Femenino")
-        generoSaludo = "Comadre";
-        inicioSaludo = inicioSaludo + generoSaludo;
+        generoSaludo = "Comadre ";
     }
   }
 
   // Saludo Creceño
   if (saludo.value == "Crucenio") {
-    inicioSaludo = "Un Saludo ";
-    generoSaludo = "Don";
+    inicioSaludo = "Un Saludo";
+    generoSaludo = "Don ";
     if (parseInt(edad.value) > 30){
       if (genero.value == "Femenino")
-        generoSaludo = "Doña";
-        inicioSaludo = inicioSaludo + generoSaludo;
+        generoSaludo = "Doña ";
     }
   }
 
   // Lanzar alert
-  alert(inicioSaludo + ", "+ tiempoSaludo + nombre.value);
+  alert(inicioSaludo + ", "+ tiempoSaludo + generoSaludo + nombre.value);
 });
